@@ -1,0 +1,77 @@
+.block {
+	position: relative;
+
+	box-sizing: border-box;
+	width: 188px;
+	margin-bottom: 10px;
+	padding: 14px;
+
+	background-color: #fff;
+	box-shadow: 0 1px 1px rgba(0,0,0,.17);
+	&__img {
+		position: relative;
+	}
+	&__link {
+		display: block;
+
+		width: 80%;
+		margin: 10px auto 40px;
+		height: 80px;
+		overflow: hidden;
+
+		text-align: center;
+
+		@extend .link;
+	}
+	&__btn {
+		position: absolute;
+		right: 0;
+		bottom: 14px;
+		left: 0;
+
+		margin: auto;
+	}
+}
+
+.block-meta {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+
+	display: flex;
+
+	width: 100%;
+
+	justify-content: center;
+	&__item {
+		position: relative;
+
+		margin-right: 3px;
+		margin-left: 3px;
+		padding-top: 3px;
+		padding-right: 10px;
+		padding-bottom: 3px;
+		padding-left: 25px;
+
+		color: #333;
+		background-color: #fff;
+
+		font-size: em(12px);
+		&:before {
+			top: 4px;
+			left: 5px;
+
+			@include content;
+		}
+		&--downloaded {
+			&:before {
+				@include bg($downloaded);
+			}
+		}
+		&--rating {
+			&:before {
+				@include bg($rating);
+			}
+		}
+	}
+}

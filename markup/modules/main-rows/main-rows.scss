@@ -1,0 +1,20 @@
+.main-rows {
+	display: flex;
+
+	padding-top: 35px;
+	padding-bottom: 35px;
+
+	background-color: #fff;
+
+	align-items: flex-start;
+	@extend .wrapper;
+	justify-content: space-between;
+}
+
+.main-rows-column {
+	&__title {
+		margin-bottom: 10px;
+
+		@extend .title;
+	}
+}

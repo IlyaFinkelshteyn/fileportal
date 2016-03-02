@@ -1,0 +1,15 @@
+doctype html
+html(class="no-js", lang="ru")
+
+	include ../modules/include/include
+
+	head
+		+head(head.defaults)
+	body
+		+header()
+		+breadcrumbs(true)
+		+list-category()
+		+main-blocks('none', 25)
+		+footer()
+
+	+scripts()

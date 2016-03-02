@@ -1,0 +1,14 @@
+mixin registration-block()
+	.registration-block
+		.registration-block__wrapper
+			.registration-block__content
+				.registration-block__title Авторизация
+				.registration-block__text Для входа на сайт и снятия ограничений на скачивание файлов, введите номер мобильного телефона.
+
+				form(method="" action="").form
+					.form__row.form__row--phone
+						label.form__label Введите Ваш номер телефона ниже
+						input(type="text" value="").form__element
+						.form__place Например: +79991115566
+
+					input(type="submit" value="Продолжить").form__submit.btn-green.btn-green--large

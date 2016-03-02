@@ -1,0 +1,43 @@
+.form {
+	&__label {
+		display: block;
+
+		margin-bottom: 10px;
+
+		color: #000;
+
+		font-size: em(18px);
+		font-weight: bold;
+	}
+	&__element {
+		box-sizing: border-box;
+		width: 300px;
+		height: 55px;
+		margin-bottom: 10px;
+		padding-left: 45px;
+
+		border: 1px solid #cfcfd0;
+		&:focus {
+			outline: none;
+		}
+	}
+	&__place {
+		margin-bottom: 20px;
+
+		color: #a4a3a3;
+
+		font-size: em(11px);
+	}
+	&__row {
+		&--phone {
+			position: relative;
+			&:before {
+				top: 42px;
+				left: 15px;
+
+				@include bg($phone);
+				@include content;
+			}
+		}
+	}
+}

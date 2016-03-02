@@ -1,0 +1,17 @@
+doctype html
+html(class="no-js", lang="ru")
+
+	include ../modules/include/include
+
+	head
+		+head(head.defaults)
+	body
+		+header()
+		+list-category()
+		+main-blocks('Фильмы', 10)
+		+main-rows(['Софт', 'Сериалы', 'Музыка'])
+		+main-blocks('Игры', 5)
+		+main-rows(['Драйвера', 'Книги', 'Документы'])
+		+footer()
+
+	+scripts()

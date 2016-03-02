@@ -1,0 +1,45 @@
+.footer {
+	display: flex;
+
+	padding-top: 25px;
+
+	background-color: #2d3132;
+
+	align-items: center;
+	@extend .wrapper;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__logo {
+		@include bg($logo-footer-desktop);
+	}
+	&__counters {
+		@include bg($counters);
+	}
+	&__text {
+		width: 100%;
+		padding-top: 20px;
+
+		text-align: center;
+
+		color: #4f5152;
+
+		font-size: em(12px);
+	}
+}
+
+.footer-menu {
+	&__item {
+		margin-right: 13px;
+		margin-left: 13px;
+
+		text-decoration: none;
+
+		color: #fff;
+		color: #cfcfcf;
+
+		font-size: em(14px);
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

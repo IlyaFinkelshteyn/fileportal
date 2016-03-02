@@ -1,0 +1,11 @@
+mixin main-blocks(title, count)
+	.main-blocks
+		- if (title != 'none') {
+		.main-blocks__title #{title}
+		-}
+		- for (var i = 0; i < count; i++) {
+		+block()
+		- }
+		- if (title == 'none') {
+			a(href="#" title="").show-more Показать еще
+		- }

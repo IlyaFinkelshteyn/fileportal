@@ -1,0 +1,19 @@
+mixin main-rows(title)
+	.main-rows
+		.main-rows-column
+			.main-rows-column__title #{title[0]}
+			- for (var i = 0; i < 5; i++) {
+				+row()
+			- }
+
+		.main-rows-column
+			.main-rows-column__title #{title[1]}
+			- for (var i = 0; i < 5; i++) {
+				+row()
+			- }
+
+		.main-rows-column
+			.main-rows-column__title #{title[2]}
+			- for (var i = 0; i < 5; i++) {
+				+row()
+			- }

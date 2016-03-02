@@ -1,0 +1,43 @@
+.registration-block {
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	background-color: #fff;
+
+	@extend .wrapper;
+	&__wrapper {
+		display: flex;
+
+		padding: 40px;
+
+		border: 3px dashed #ededed;
+
+		align-items: center;
+		justify-content: flex-start;
+		&:before {
+			display: block;
+
+			width: 241px;
+			height: 338px;
+
+			content: "";
+
+			background: url(%=staticPrefixForCss=%general/registration.png) no-repeat;
+		}
+	}
+	&__content {
+		margin-left: 55px;
+		max-width: 595px;
+	}
+	&__title {
+		font-size: em(35px);
+		color: #333;
+		font-weight: bold;
+	}
+	&__text {
+		font-size: em(16px);
+		color: #000;
+		padding: 25px 0;
+		line-height: 22px;
+	}
+}

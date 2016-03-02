@@ -1,0 +1,120 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+.title {
+	text-transform: uppercase;
+
+	color: $orange;
+
+	font-size: em(23px);
+}
+
+.link {
+	text-decoration: none;
+
+	color: $blue;
+
+	font-size: em(14px);
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.btn-green {
+	display: block;
+
+	text-align: center;
+	text-decoration: none;
+
+	color: #fff;
+	border: 0;
+	background-color: $green;
+	&:hover {
+		background-color: $green + #111;
+	}
+	&--medium {
+		width: 100px;
+		height: 28px;
+
+		font-size: em(13px);
+		line-height: 28px;
+	}
+	&--small {
+		width: 64px;
+		height: 17px;
+
+		font-size: em(10px);
+		line-height: 17px;
+	}
+	&--large {
+		width: 300px;
+		height: 60px;
+
+		font-size: em(21px);
+		line-height: 60px;
+	}
+	&--single {
+		width: 274px;
+		height: 64px;
+
+		font-size: em(27px);
+		font-weight: bold;
+		line-height: 64px;
+	}
+}
+
+.btn-torrent {
+	position: relative;
+
+	display: block;
+
+	padding-left: 27px;
+
+	text-align: center;
+	text-decoration: none;
+
+	color: $green;
+	&:before {
+		left: 60px;
+
+		@include bg($torrent);
+		@include content;
+	}
+	&--single {
+		box-sizing: border-box;
+		width: 274px;
+		height: 43px;
+
+		border: 1px solid #dbdbdb;
+
+		font-size: em(17px);
+		line-height: 43px;
+		&:before {
+			top: 11px;
+		}
+	}
+	&:hover {
+		color: $green + #111;
+	}
+}
+
+.show-more {
+	display: block;
+
+	width: 302px;
+	height: 47px;
+	margin: 25px auto;
+
+	text-align: center;
+	text-decoration: none;
+
+	color: #2d3132;
+	background-color: #fff;
+	box-shadow: 0 1px 1px rgba(0,0,0,.17);
+
+	font-size: em(18px);
+	line-height: 47px;
+	&:hover {
+		box-shadow: none;
+	}
+}

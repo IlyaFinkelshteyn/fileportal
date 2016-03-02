@@ -1,0 +1,21 @@
+.main-blocks {
+	display: flex;
+
+	padding-top: 35px;
+	padding-bottom: 30px;
+
+	background-color: #f5f5f5;
+
+	align-items: stretch;
+	@extend .wrapper;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__title {
+		width: 100%;
+		margin-bottom: 23px;
+
+		text-align: center;
+
+		@extend .title;
+	}
+}

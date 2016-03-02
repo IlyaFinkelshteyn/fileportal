@@ -1,0 +1,19 @@
+.header {
+	position: relative;
+
+	display: flex;
+
+	padding-top: 17px;
+	padding-bottom: 17px;
+
+	background-color: #fff;
+
+	align-items: center;
+	@extend .wrapper;
+	justify-content: space-between;
+	&__logo {
+		display: block;
+
+		@include bg($logo-header-desktop);
+	}
+}

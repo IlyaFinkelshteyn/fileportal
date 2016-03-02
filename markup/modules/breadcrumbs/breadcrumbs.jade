@@ -1,0 +1,8 @@
+mixin breadcrumbs(categories)
+	.breadcrumbs
+		a(href="#" title="").breadcrumbs__item.breadcrumbs__item--home Главная
+		a(href="#" title="").breadcrumbs__item Фильмы
+		.breadcrumbs__item.breadcrumbs__item--current Комедии
+		- if (categories == true) {
+		.categories-inside Категории
+		- }
