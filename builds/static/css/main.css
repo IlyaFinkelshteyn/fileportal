@@ -463,6 +463,13 @@ blockquote {
   line-height: 64px;
 }
 
+.btn-green--landing {
+  width: 169px;
+  height: 53px;
+  font-size: 1.375em;
+  line-height: 53px;
+}
+
 .btn-torrent {
   position: relative;
   display: block;
@@ -470,15 +477,16 @@ blockquote {
   text-align: center;
   text-decoration: none;
   color: #3ca119;
+  border: 1px solid #dbdbdb;
 }
 
 .btn-torrent:before {
   left: 60px;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -30px -133px;
+  background-position: -439px -125px;
   width: 19px;
   height: 19px;
-  background-size: 202px, 195px;
+  background-size: 478px, 316px;
   background-repeat: no-repeat;
   position: absolute;
   display: block;
@@ -489,13 +497,24 @@ blockquote {
   box-sizing: border-box;
   width: 274px;
   height: 43px;
-  border: 1px solid #dbdbdb;
   font-size: 1.0625em;
   line-height: 43px;
 }
 
 .btn-torrent--single:before {
   top: 11px;
+}
+
+.btn-torrent--landing {
+  width: 243px;
+  height: 53px;
+  font-size: 1.375em;
+  line-height: 53px;
+}
+
+.btn-torrent--landing:before {
+  top: 17px;
+  left: 30px;
 }
 
 .btn-torrent:hover {
@@ -534,7 +553,7 @@ body {
   }
 }
 
-.wrapper, .breadcrumbs, .footer, .header, .list-category, .main-blocks, .main-rows, .registration-block, .single-content {
+.wrapper, .breadcrumbs, .footer, .header, .landing-content, .list-category, .main-blocks, .main-rows, .registration-block, .single-content {
   box-sizing: border-box;
   width: 1057px;
   margin: auto;
@@ -611,19 +630,19 @@ body {
 
 .block-meta__item--downloaded:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -190px -114px;
+  background-position: -445px -155px;
   width: 12px;
   height: 10px;
-  background-size: 202px, 195px;
+  background-size: 478px, 316px;
   background-repeat: no-repeat;
 }
 
 .block-meta__item--rating:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -190px -98px;
+  background-position: -429px -155px;
   width: 12px;
   height: 12px;
-  background-size: 202px, 195px;
+  background-size: 478px, 316px;
   background-repeat: no-repeat;
 }
 
@@ -660,10 +679,10 @@ body {
   top: 3px;
   left: 0;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -115px -133px;
+  background-position: -475px -155px;
   width: 1px;
   height: 7px;
-  background-size: 202px, 195px;
+  background-size: 478px, 316px;
   background-repeat: no-repeat;
   position: absolute;
   display: block;
@@ -672,10 +691,10 @@ body {
 
 .breadcrumbs__item--home:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -103px -133px;
+  background-position: -271px -174px;
   width: 8px;
   height: 7px;
-  background-size: 202px, 195px;
+  background-size: 478px, 316px;
   background-repeat: no-repeat;
 }
 
@@ -701,10 +720,10 @@ body {
   top: 17px;
   right: 15px;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -73px -133px;
+  background-position: -461px -155px;
   width: 10px;
   height: 10px;
-  background-size: 202px, 195px;
+  background-size: 478px, 316px;
   background-repeat: no-repeat;
   position: absolute;
   display: block;
@@ -733,19 +752,19 @@ body {
 
 .footer__logo {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px 0px;
+  background-position: -203px -125px;
   width: 202px;
   height: 45px;
-  background-size: 202px, 195px;
+  background-size: 478px, 316px;
   background-repeat: no-repeat;
 }
 
 .footer__counters {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px -98px;
+  background-position: -203px -203px;
   width: 186px;
   height: 31px;
-  background-size: 202px, 195px;
+  background-size: 478px, 316px;
   background-repeat: no-repeat;
 }
 
@@ -805,10 +824,10 @@ body {
   top: 42px;
   left: 15px;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px -163px;
+  background-position: 0px -284px;
   width: 16px;
   height: 32px;
-  background-size: 202px, 195px;
+  background-size: 478px, 316px;
   background-repeat: no-repeat;
   position: absolute;
   display: block;
@@ -837,11 +856,236 @@ body {
 .header__logo {
   display: block;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px -49px;
+  background-position: 0px -203px;
   width: 199px;
   height: 45px;
-  background-size: 202px, 195px;
+  background-size: 478px, 316px;
   background-repeat: no-repeat;
+}
+
+.landing-advantages {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.landing-advantages__devices {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -203px 0px;
+  width: 275px;
+  height: 121px;
+  background-size: 478px, 316px;
+  background-repeat: no-repeat;
+}
+
+.landing-advantages-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.landing-advantages-list__column {
+  width: 310px;
+}
+
+.landing-advantages-list__item {
+  position: relative;
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.landing-advantages-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.landing-advantages-list__item:before {
+  top: 3px;
+  left: -18px;
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -255px -174px;
+  width: 12px;
+  height: 8px;
+  background-size: 478px, 316px;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  content: "";
+}
+
+.landing-content {
+  padding-top: 40px;
+  background-color: #fff;
+}
+
+.landing-social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  border-top: 2px solid #f0f0f0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.landing-top {
+  position: relative;
+  padding: 44px;
+  padding-left: 303px;
+  border: 3px dashed #ededed;
+}
+
+.landing-top:before {
+  left: 44px;
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: 0px 0px;
+  width: 199px;
+  height: 199px;
+  background-size: 478px, 316px;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  content: "";
+}
+
+.landing-top__title {
+  color: #333;
+  font-size: 2.1875em;
+  font-weight: bold;
+}
+
+.landing-top__ganre {
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: #4c5052;
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+.landing-top-meta {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.landing-top-meta__item {
+  position: relative;
+  margin-right: 15px;
+  padding: 3px 5px;
+  padding-left: 27px;
+  border: 1px solid #d6d6d6;
+  font-size: 0.9375em;
+}
+
+.landing-top-meta__item:before {
+  left: 5px;
+  position: absolute;
+  display: block;
+  content: "";
+}
+
+.landing-top-meta__item--size {
+  color: #5b7fa6;
+}
+
+.landing-top-meta__item--size:before {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -223px -174px;
+  width: 12px;
+  height: 16px;
+  background-size: 478px, 316px;
+  background-repeat: no-repeat;
+}
+
+.landing-top-meta__item--downloaded {
+  color: #3ca119;
+}
+
+.landing-top-meta__item--downloaded:before {
+  top: 5px;
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -409px -155px;
+  width: 16px;
+  height: 13px;
+  background-size: 478px, 316px;
+  background-repeat: no-repeat;
+}
+
+.landing-top-meta__item--likes {
+  color: #333;
+}
+
+.landing-top-meta__item--likes:before {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -462px -125px;
+  width: 16px;
+  height: 16px;
+  background-size: 478px, 316px;
+  background-repeat: no-repeat;
+}
+
+.landing-top-btns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.landing-top-virus {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: 0px -252px;
+  width: 153px;
+  height: 28px;
+  background-size: 478px, 316px;
+  background-repeat: no-repeat;
+}
+
+.landing-top-likes {
+  margin-top: 30px;
 }
 
 .list-category {
@@ -940,6 +1184,53 @@ body {
   margin-bottom: 10px;
 }
 
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  width: 295px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  border-top: 1px dashed #d0d0d0;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.row:last-child {
+  border-bottom: 1px dashed #d0d0d0;
+}
+
+.row__img {
+  width: 56px;
+  margin-right: 13px;
+}
+
+.row__img img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: 56px;
+  margin: auto;
+}
+
+.row__content {
+  width: 210px;
+}
+
+.row__link {
+  display: block;
+  margin-bottom: 7px;
+}
+
 .registration-block {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -987,53 +1278,6 @@ body {
   color: #000;
   padding: 25px 0;
   line-height: 22px;
-}
-
-.row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  box-sizing: border-box;
-  width: 295px;
-  padding-top: 13px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  border-top: 1px dashed #d0d0d0;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.row:last-child {
-  border-bottom: 1px dashed #d0d0d0;
-}
-
-.row__img {
-  width: 56px;
-  margin-right: 13px;
-}
-
-.row__img img {
-  display: block;
-  width: auto;
-  max-width: 100%;
-  height: 56px;
-  margin: auto;
-}
-
-.row__content {
-  width: 210px;
-}
-
-.row__link {
-  display: block;
-  margin-bottom: 7px;
 }
 
 .single-content {
@@ -1112,10 +1356,10 @@ body {
   display: block;
   content: "";
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px -133px;
+  background-position: -409px -125px;
   width: 26px;
   height: 26px;
-  background-size: 202px, 195px;
+  background-size: 478px, 316px;
   background-repeat: no-repeat;
 }
 
@@ -1131,10 +1375,10 @@ body {
   top: 6px;
   right: 12px;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -87px -133px;
+  background-position: -239px -174px;
   width: 12px;
   height: 8px;
-  background-size: 202px, 195px;
+  background-size: 478px, 316px;
   background-repeat: no-repeat;
   position: absolute;
   display: block;
@@ -1155,10 +1399,10 @@ body {
   top: 1px;
   left: 40px;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -20px -163px;
+  background-position: -393px -203px;
   width: 9px;
   height: 9px;
-  background-size: 202px, 195px;
+  background-size: 478px, 316px;
   background-repeat: no-repeat;
   position: absolute;
   display: block;

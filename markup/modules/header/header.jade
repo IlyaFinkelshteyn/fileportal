@@ -1,6 +1,9 @@
-mixin header()
+mixin header(page)
 	header.header
 		a(href="#" title="").header__logo
 
-		+top-menu()
-		+search()
+		if (page == 'landing')
+			img(src="%=staticPrefix=%images/general/support.png" alt="")
+		else
+			+top-menu()
+			+search()

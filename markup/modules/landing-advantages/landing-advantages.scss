@@ -1,0 +1,41 @@
+.landing-advantages {
+	display: flex;
+
+	margin-top: 30px;
+
+	align-items: center;
+	justify-content: space-between;
+	&__devices {
+		@include bg($ready-for-devices);
+	}
+}
+
+.landing-advantages-list {
+	display: flex;
+
+	align-items: flex-start;
+	justify-content: space-between;
+	&__column {
+		width: 310px;
+	}
+	&__item {
+		position: relative;
+
+		margin-bottom: 15px;
+
+		color: #666;
+
+		font-size: em(12px);
+		font-weight: bold;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&:before {
+			top: 3px;
+			left: -18px;
+
+			@include bg($check);
+			@include content;
+		}
+	}
+}

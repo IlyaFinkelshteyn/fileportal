@@ -61,6 +61,13 @@
 		font-weight: bold;
 		line-height: 64px;
 	}
+	&--landing {
+		width: 169px;
+		height: 53px;
+
+		font-size: em(22px);
+		line-height: 53px;
+	}
 }
 
 .btn-torrent {
@@ -74,6 +81,7 @@
 	text-decoration: none;
 
 	color: $green;
+	border: 1px solid #dbdbdb;
 	&:before {
 		left: 60px;
 
@@ -85,12 +93,21 @@
 		width: 274px;
 		height: 43px;
 
-		border: 1px solid #dbdbdb;
-
 		font-size: em(17px);
 		line-height: 43px;
 		&:before {
 			top: 11px;
+		}
+	}
+	&--landing {
+		width: 243px;
+		height: 53px;
+
+		font-size: em(22px);
+		line-height: 53px;
+		&:before {
+			top: 17px;
+			left: 30px;
 		}
 	}
 	&:hover {
