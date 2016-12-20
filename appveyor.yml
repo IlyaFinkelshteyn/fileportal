@@ -32,6 +32,7 @@ build: off
 build_script:
   - npm remove --save-dev grunt-autoprefixer
   - npm install --save-dev grunt-postcss autoprefixer
+  - npm install browser-sync
   - gulp init
 
 test_script:
