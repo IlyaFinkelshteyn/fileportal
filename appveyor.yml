@@ -37,6 +37,7 @@ install:
   - npm install del
   - npm install gulp-if
   - npm install gulp-importify
+  - npm install gulp-notify
   - gulp init
 
 build_script:
