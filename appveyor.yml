@@ -30,6 +30,8 @@ install:
 build: off
 
 build_script:
+  - npm remove --save-dev grunt-autoprefixer
+  - npm install --save-dev grunt-postcss autoprefixer
   - gulp init
 
 test_script:
