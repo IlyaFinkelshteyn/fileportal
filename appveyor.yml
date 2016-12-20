@@ -32,6 +32,7 @@ install:
   - npm install gulp-cached
   - npm install gulp-changed
   - npm install gulp-concat
+  - npm install gulp-data
   - gulp init
 
 build_script:
