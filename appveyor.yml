@@ -34,6 +34,7 @@ install:
   - npm install gulp-concat
   - npm install gulp-data
   - npm install del
+  - npm install gulp-if
   - gulp init
 
 build_script:
