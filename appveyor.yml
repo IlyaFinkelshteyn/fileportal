@@ -26,14 +26,11 @@ install:
   - npm --version
   - npm install -g gulp
   - npm install
-
-build: off
-
-build_script:
   - npm remove --save-dev grunt-autoprefixer
   - npm install --save-dev grunt-postcss autoprefixer
   - npm install browser-sync
+  - npm install gulp-cached
   - gulp init
 
-test_script:
+build_script:
   - cmd: gulp build --release --ie
