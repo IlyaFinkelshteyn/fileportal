@@ -38,7 +38,8 @@ install:
   - npm install gulp-if
   - npm install gulp-importify
   - npm install gulp-notify
-  - gulp init
+  - npm install gulp-plumber
+  #- gulp init
 
 build_script:
   - cmd: gulp build --release --ie
