@@ -26,15 +26,16 @@ install:
   - npm --version
   - npm install -g gulp
   - npm install
-  - npm remove --save-dev grunt-autoprefixer
-  - npm install --save-dev grunt-postcss autoprefixer
-  - npm install browser-sync
-  - npm install gulp-cached
-  - npm install gulp-changed
-  - npm install gulp-concat
-  - npm install gulp-data
-  - npm install del
-  - npm install gulp-if
+  - npm install --save-dev gulp-install
+  #- npm remove --save-dev grunt-autoprefixer
+  #- npm install --save-dev grunt-postcss autoprefixer
+  #- npm install browser-sync
+  #- npm install gulp-cached
+  #- npm install gulp-changed
+  #- npm install gulp-concat
+  #- npm install gulp-data
+  #- npm install del
+  #- npm install gulp-if
   - gulp init
 
 build_script:
