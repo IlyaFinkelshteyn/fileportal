@@ -42,4 +42,4 @@ install:
   #- gulp init
 
 build_script:
-  - cmd: gulp build --release true
+  - cmd: gulp build --max_old_space_size=8192 --release true
