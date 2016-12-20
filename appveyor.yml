@@ -33,6 +33,7 @@ install:
   - npm install gulp-changed
   - npm install gulp-concat
   - npm install gulp-data
+  - npm install del
   - gulp init
 
 build_script:
