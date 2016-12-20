@@ -42,4 +42,4 @@ install:
   #- gulp init
 
 build_script:
-  - cmd: gulp build --release --ie
+  - cmd: gulp build --release true
