@@ -6,7 +6,6 @@ version: "{build}"
 
 platform:
   - x64
-  - x86
 
 clone_depth: 10
 
@@ -15,10 +14,10 @@ init:
   - git config --global core.autocrlf true
 
 # What combinations to test
-environment:
-  matrix:
-    - nodejs_version: 5
-    - nodejs_version: 4
+#environment:
+#  matrix:
+#    - nodejs_version: 5
+#    - nodejs_version: 4
 
 install:
   - ps: Install-Product node $env:nodejs_version $env:platform
